@@ -1,0 +1,236 @@
+/* Estilo para a seção de produtos */
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os produtos */
+    justify-content: center; /* Centraliza os produtos */
+    padding: 20px;
+}
+
+/* Estilo individual para cada produto */
+.produto {
+    width: 250px; /* Largura fixa para os produtos */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Ajuste nas imagens dos produtos */
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Efeito de hover nos produtos */
+.produto:hover {
+    transform: scale(1.05); /* Aumenta levemente o produto ao passar o mouse */
+}
+
+/* Título do produto */
+.produto h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Descrição do produto */
+.produto p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Botão de negociar */
+.produto button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.produto button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para produtos em destaque */
+#produtos h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Responsividade: ajustar os produtos para telas menores */
+@media (max-width: 768px) {
+    .produto {
+        width: 45%; /* Ocupa 45% da largura em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        width: 100%; /* Ocupa 100% da largura em telas pequenas */
+    }
+}
+
+
+
+
+.seccaodoproduto{
+    border: solid;
+
+}
+.textodoproduto{
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+/* Estilo para o container dos produtos */
+.produto {
+    flex: 1 1 30%; /* Faz com que os produtos ocupem 30% do espaço disponível */
+    margin: 10px; /* Espaçamento entre os produtos */
+    box-sizing: border-box;
+}
+
+/* Container para os produtos */
+.produtos-container {
+    display: flex; /* Usa flexbox para alinhar os produtos lado a lado */
+    flex-wrap: wrap; /* Permite que os produtos quebrem linha quando necessário */
+    justify-content: space-between; /* Espaça os produtos igualmente */
+    gap: 20px; /* Espaçamento entre os produtos */
+}
+
+/* Ajuste para telas pequenas */
+@media screen and (max-width: 500px) {
+    /* Faz os produtos ocuparem 100% do espaço em telas pequenas */
+    .produto {
+        flex: 1 1 100%;
+        margin: 5px 0; /* Ajusta a margem para telas menores */
+    }
+
+    /* Garante que os produtos fiquem na mesma linha mesmo em telas pequenas */
+    .produtos-container {
+        display: flex;
+        flex-wrap: nowrap; /* Não quebra os produtos em múltiplas linhas */
+        overflow-x: auto; /* Adiciona barra de rolagem horizontal caso necessário */
+    }
+}
+
+/*PARA O BOTÃO NEGOCIAR*/
+/*PARA O BOTÃO NEGOCIAR*/
+
+
+/* Estilo para o Modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fechar o modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para os preços */
+.opcao-preco {
+    margin: 10px 0;
+}
+
+
+
+
+/* Estilo para o Modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fechar o modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para os preços */
+.opcao-preco {
+    margin: 10px 0;
+}
+
+.preco {
+    font-weight: bold;
+    color: green;
+    font-size: 1.2em;
+}
+
+/*PARA O BOTÃO NEGOCIAR TERMINOU AQUI*/
+/*PARA O BOTÃO NEGOCIAR TERMINOU AQUI*/
